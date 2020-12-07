@@ -1,0 +1,111 @@
+.contcontacto{
+    width: 100%;
+    height: 600px;
+    background: #ff0057;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ .formcont{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formcont form{
+    position: relative;
+    width: 100%;
+    padding: 0 0 0 75px;
+}
+.formcont form h2{
+    font-weight: 500;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+ .inputcont{
+    position: relative;
+    margin-bottom: 40px;
+
+}
+.inputcont:last-child{
+    margin-bottom: 0px;
+}
+.inputcont input,
+.inputcont textarea
+{
+    position: relative;
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    scroll-padding-bottom: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    border-bottom: 2px solid;
+    resize: none;
+}
+.inputcont textarea{
+    height: 100px;
+}
+.inputcont input[type="submit"]{
+    padding: 8px 8px;
+    margin-top: -10px;
+    width: 100px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+}
+.inputcont input[type="submit"]:focus{
+    background: #1bfaad;
+    color: #1111;
+
+}
+.inputcont span{
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+    font-weight: 300;
+    display: inline-block;
+    pointer-events: none;
+    letter-spacing: 1px;
+    transition: all 0.2s;
+    color: rgba(255,255,255,0.5);
+}
+.inputcont input:focus~span,
+.inputcont textarea:focus~span,
+.inputcont input:valid~span,
+.inputcont textarea:valid~span{
+    transform: translateY(-24px);
+    color: #fff;
+    font-size: 14px;
+}
+.contactImg{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.contactImg:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform-origin: bottom;
+    transform:skewX(-25deg) translate(20%);
+}
+.contactImg img{
+    position: absolute;
+    bottom: 0;
+    max-height: 95%;
+}
